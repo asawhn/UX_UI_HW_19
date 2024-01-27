@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <header class="navigation">
+        <div class="inline-block logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <nav class="inline-block">
+            <ul>
+                <li class="inline-block">About</li>
+                <li class="inline-block">Skills</li>
+                <li class="inline-block">Work</li>
+                <li class="inline-block">Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="heroImg">
+        <div class="content">
+            <img src="images/hero.png" alt="Hero Img">
+            <p>An aspiring UX professional and experimenter at heart, I utilize my 3+ years of research experience to define human-centered solutions.</p>
+            <button class="resume-button">Download Resume</button>
+        </div>
+    </section>
+
+    <!--  My UX Skills section coded using CSS flex -->
+    <section class="mySkills">
+        <h1>My UX Skills</h1>
+        <div class="flexContainer">
+            <div>
+                <img src="images/design.png" alt="Design Image">
+                <h3>Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, quaerat accusamus.</p>
+            </div>
+            <div>
+                <img src="images/research.png" alt="Research Image">
+                <h3>Research</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, quaerat accusamus.</p>
+            </div>
+            <div>
+                <img src="images/dev.png" alt="Development Image">
+                <h3>Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, quaerat accusamus.</p>
+            </div>
+        </div>
+    </section>
+    <!-- My Work Section Constructed using CSS Grid -->
+<section class="myWork">
+    <h1>My Work</h1>
+    <div class="workGrid">
+        <div class="projectdiv">
+            <img src="images/p1.png" alt="Project 1">
+            <h4>Project Title 1</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, quaerat accusamus.</p>
+            <!--updated so all project buttons can be ref. individually in my js file -->
+            <button name="proj1">View Project</button>
+        </div>
+        <div class="projectdiv">
+            <img src="images/p2.png" alt="Project 2">
+            <h4>Project Title 2</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, quaerat accusamus.</p>
+            <button name="proj2">View Project</button>
+        </div>
+        <div class="projectdiv">
+            <img src="images/p3.png" alt="Project 3">
+            <h4>Project Title 3</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, quaerat accusamus.</p>
+            <button name="proj3">View Project</button>
+        </div>
+    </div>
+</section>
+    <footer>
+        <ul>
+            <li class="inline-block">About</li>
+            <li class="inline-block">Skills</li>
+            <li class="inline-block">Work</li>
+            <li class="inline-block">Contact</li>
+        </ul>
+    </footer>
+</body>
+</html>

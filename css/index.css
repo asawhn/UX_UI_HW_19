@@ -1,0 +1,146 @@
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+.navigation {
+    background-color: #004D70;
+    color: #FFFFFF; 
+}
+.heroImg img {
+    max-width: 300px;
+    height: 500px;
+}
+.logo img {
+    max-width: 100px;
+    height: 100px;
+}
+.logo {
+    width: 23%;
+    padding: 0%;
+    text-align: center;
+    float: left; 
+    width: auto; 
+}
+
+nav {
+    width: 70%;
+    padding: 0%;
+}
+
+ul {
+    width: 50%;
+    margin-left: 0%;
+}
+
+li {
+    padding: 20px;
+}
+
+.heroImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    height: 600px;
+    padding: 25px;
+}
+
+.content {
+    text-align: center;
+}
+
+footer {
+    background-color: #004D70;
+    color: #FFFFFF;
+}
+
+footer ul {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px; 
+}
+footer li {
+    padding: 20px; 
+}
+
+/*  My UX Skills section coded using CSS flex */
+
+.flexContainer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    flex-direction: row; 
+}
+
+.flexContainer > div {
+    width: 33%; 
+    box-sizing: border-box; 
+    padding: 10px; 
+}
+
+.flexContainer img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.flexContainer h3 {
+    margin-top: 10px;
+}
+
+.flexContainer p {
+    margin-top: 10px;
+}
+
+/* My Work Section Constructed using CSS Grid */
+.workGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: 70%; 
+    gap: 20px; 
+}
+
+.projectdiv {
+    display: grid;
+    grid-template-areas: 
+        "image"
+        "title"
+        "description"
+        "button";
+    gap: 10px;
+}
+
+.projectdiv img {
+    grid-area: image;
+    width: 70%;
+    height: auto;
+}
+
+.projectdiv h4 {
+    grid-area: title;
+}
+
+.projectdiv p {
+    grid-area: description;
+}
+
+.projectdiv button {
+    grid-area: button;
+    width: 20%;
+}
+
+/* Mobile Media Query */
+@media screen and (max-width: 600px) {
+    .flexContainer {
+        flex-direction: column;
+    }
+
+    .flexContainer > div {
+        width: 70%;
+    }
+
+    /* Adjust Grid Container for My Work Section */
+    .workGrid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto; 
+    }
+}
